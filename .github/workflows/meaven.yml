@@ -3,7 +3,7 @@ name: Build and test Maven project
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-and-test:
