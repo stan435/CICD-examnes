@@ -1,0 +1,15 @@
+name: Build and test Maven project
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build and test project
+        run: |
+          mvn clean install
